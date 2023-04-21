@@ -1,9 +1,13 @@
 #include <stdio.h>
 int main(){
+	int a;
+	int b;
 	while(1){
-	int a,b;
-	scanf("%d %d",&a,&b);
-	printf("%d",a*b);
+	    scanf("%d %d",&a,&b);
+	    a = a ^ b;
+	    b = a ^ b;
+	    a = a ^ b;
+	printf("%d %d\n",a,b);
 	}	
 	return 0;
 }
