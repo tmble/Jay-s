@@ -1,0 +1,10 @@
+str1='学python，用python'
+str2="学python，用python"
+str3=""""学python，
+用python"""
+str4='''学python，
+用python'''
+print(str1,type(str1))
+print(str2,type(str2))
+print(str3,type(str3))
+print(str4,type(str4))
