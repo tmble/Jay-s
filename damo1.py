@@ -1,2 +1,5 @@
-present=input('鹏子哥是什么牛马')
-print(present,type(present))
+print('程序开始')
+print('1.把冰箱门打开')
+print('2，把大象把进去')
+print('3.把冰箱门关上')
+print('程序结束')
