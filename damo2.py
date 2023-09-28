@@ -1,3 +1,5 @@
-a=int(input('加数一'))
-b=int(input('加数二'))
-print(a+b)
+print(bool(0.0000))
+print(bool(""))
+print(bool(''))
+print(bool({}))
+print(bool('鹏子哥'))
