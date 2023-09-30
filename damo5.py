@@ -1,16 +1,9 @@
-a,b=10,2
-print(a<=b)
-print(a>=b)
-print(a==b)
-print(a!=b)
-a=5
-b=5
-print(a is b)
-lst1=[1,2,3,4]
-lst2=[1,2,3,4]
-print(lst1==lst2)
-print(lst1 is lst2)
-print(id(lst1))
-print(id(lst2))
-print(a is not b)
-print(lst1 is not lst2)
+s=int(input('请输入一个成绩'))
+if 90<=s<=100:
+    print('A级')
+elif 60<=s<=89:
+    print('B级')
+elif 0<=s<=59:
+    print('C级')
+else:
+    print('你™会不会输')
