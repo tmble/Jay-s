@@ -1,5 +1,7 @@
-money=1000
-a=int(input('请输入取款金额'))
-if money>=a:
-    money=money-a
-    print('取款成功余额为：',money)
+for item in range (3):
+    pwd=input('请输入密码')
+    if pwd=='888':
+        print('正确')
+        break
+    else:
+        print('不正确')

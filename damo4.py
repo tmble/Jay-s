@@ -1,5 +1,9 @@
-l=int (input('请输入一个整数'))
-if l%2==0:
-          print(l,'是偶数')
-else:
-          print(l,'是奇数')
+a=0
+while a<3:
+    pwd=input('输入密码')
+    if pwd=='888':
+        print('密码正确')
+        break
+    else:
+        print('不正确')
+    a+=1
