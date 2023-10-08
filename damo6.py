@@ -1,14 +1,9 @@
-answer=input('你是鹏子哥吗？yes/no')
-money=float(input('请输入购物金额'))
-if answer=='yes':
-    if money>=200:
-        print('买的不错，打八折，下次多买点：',money*0.8)
-    elif money>=100:
-        print('有点少哦，这次打九折：',money*0.9)
+for item in range(3):
+    pwd=input('请输入密码:')
+    if pwd=='8888':
+        print('密码正确')
+        break
     else:
-        print('买这么少，打你妹的折：',money)
+        print('密码不正确')
 else:
-    if money>=200:
-        print('下次多买点,这次打九五折：',money*0.95)
-    else:
-        print('买这么少，还想打折：',money)
+    print('对不起你个老登')
