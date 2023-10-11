@@ -1,10 +1,5 @@
-r=range(5)
-print(r)
-print(list(r))
-r=range(1,5)
-print(list(r))
-r=range(1,5,2)
-print(list(r))
-print(10 in r)
-print(6 not in r)
-print(list(range(0,101,10)))
+n=10
+lst=['hello','w',78]
+print(id(lst))
+print(type(lst))
+print(lst)
