@@ -1,5 +1,4 @@
-print(bool(0.0000))
-print(bool(""))
-print(bool(''))
-print(bool({}))
-print(bool('鹏子哥'))
+lst=['hai','ws',13,'ws']
+print(lst[0],lst[-3])
+lst2=list(['hai','ws',13])
+print(lst2)
