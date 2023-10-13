@@ -1,7 +1,4 @@
-for item in range (3):
-    pwd=input('请输入密码')
-    if pwd=='888':
-        print('正确')
-        break
-    else:
-        print('不正确')
+lst=['hello','world',98,'hello']
+print(lst.index('hello'))
+#print(lst.index('hello',1,3))
+print(lst.index('hello',1,4))
