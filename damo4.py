@@ -1,9 +1,6 @@
-a=0
-while a<3:
-    pwd=input('输入密码')
-    if pwd=='888':
-        print('密码正确')
-        break
-    else:
-        print('不正确')
-    a+=1
+s='helloworld'
+for i in range(0,len(s)):
+    print(i,s[i],end='\t\t')
+print('-------------')
+for i in range(-10,0):
+    print(i,s[i],end='\t\t')
