@@ -1,9 +1,12 @@
-for i in range(1,5):
-    for k in  range(1,5):
-        print('*',end='\t')
-    print()
+lst=['hello','world','python','p2p']
+for item in lst:
+    print(item)
+for i in range(0,len(lst)):
+    print(i,'--->',lst[i])
 
-for i in range(1,10):
-    for l in range(1,i+1):
-        print('*',end='')
-    print()
+for index,item in enumerate(lst):
+    print(index,item)
+for index,item in enumerate(lst,start=66):
+    print(index,item)
+for index,item in enumerate(lst,99):
+    print(index, item)
