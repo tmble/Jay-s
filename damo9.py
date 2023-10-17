@@ -1,4 +1,19 @@
-for i in range(1,10):
-    for u in range(1,i+1):
-        print(u,'*',i,'=',i*u,end='\t')
-    print()
+lst=['hello','world','python']
+print('原列表:',lst,id(lst))
+lst.append('wjk')
+print('元素增加后:',lst,id(lst))
+lst.insert(1,100)
+print('现在:',lst,id(lst))
+lst.remove('world')
+print('删除之后的列表:',lst,id(lst))
+print(lst.pop(1))
+print(lst)
+#lst.clear()
+print(lst,id(lst))
+#lst.reverse()
+print(lst,id(lst))
+new=lst.copy()
+print(lst,id(lst))
+print(new,id(new))
+lst[1]='myself'
+print(lst,id(lst))

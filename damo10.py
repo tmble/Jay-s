@@ -1,5 +1,15 @@
-for i in range(5):
-    for j in range(1,11):
-        if j%2==0:
-            break
-        print(j)
+lst=[1,2,3,4,5,6,8,7]
+print('原列表：',lst,id(lst))
+#排序，默认是升序
+lst.sort()
+print('升序：',lst,id(lst))
+lst.sort(reverse=True)
+print('降序：',lst,id(lst))
+lst2=['banana','apple','Cat','Orange']
+print('原列表',lst2)
+lst2.sort()
+print(lst2)
+lst2.sort(reverse=True)
+print(lst2)
+lst2.sort(key=str.lower)
+print(lst2)
