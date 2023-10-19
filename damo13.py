@@ -1,5 +1,19 @@
-n1=1.1
-n2=2.2
-print(n1+n2)
-from decimal import Decimal
-print(Decimal('1.1')+Decimal('2.2'))
+t=('hello',[10,12,330],'python','world')
+print(t)
+t=tuple('hello')
+print(t)
+t=tuple([10,12,30])
+print(t)
+print(10 in t)
+print(10 not in t)
+print(max(t))
+print(min(t))
+print(len(t))
+print('10的索引', t.index(10))
+print('统计10的个数',t.count(10))
+t=(10)
+print(t,type(t))
+y=(10,)
+print(y,type(y))
+#del y
+print(y)
