@@ -1,20 +1,20 @@
-s='HelloWorld'
-#字符串的替换
-new_s=s.replace('o','嗯',1)#最后1一个参数是替换次数，默认是全部替换
+s='hellodadsffffwe'
+#(1)字符串拼接及not in
+new_s=''
+for item in s:
+    if item not in new_s:
+        new_s+=item#拼接操作
 print(new_s)
 
-#字符串在指定的宽度范围内居中
-print(s.center(20))
-print(s.center(20,'*'))
+#(2)使用索引+not in
+new_s2=''
+for i in range(len(s)):
+    if s[i] not in new_s2:
+        new_s2+=s[i]
+print(new_s2)
 
-#去除字符串左右的空格
-s='     Hello     World     '
-print(s.strip())
-print(s.lstrip())
-print(s.rstrip())
-
-#去掉指定的字符
-s3='dl_HelloWorld'
-print(s3.strip('ld'))#与顺序无关
-print(s3.lstrip('ld'))
-print(s3.rstrip('ld'))
+#(3)通过集合去重+列表排序
+new_s3=set(s)
+lst=list(new_s3)
+lst.sort(key=s.index)
+print(''.join(lst))
