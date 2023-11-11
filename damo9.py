@@ -1,19 +1,11 @@
-lst=['hello','world','python']
-print('原列表:',lst,id(lst))
-lst.append('wjk')
-print('元素增加后:',lst,id(lst))
-lst.insert(1,100)
-print('现在:',lst,id(lst))
-lst.remove('world')
-print('删除之后的列表:',lst,id(lst))
-print(lst.pop(1))
-print(lst)
-#lst.clear()
-print(lst,id(lst))
-#lst.reverse()
-print(lst,id(lst))
-new=lst.copy()
-print(lst,id(lst))
-print(new,id(new))
-lst[1]='myself'
-print(lst,id(lst))
+import re
+pattern='\d\.\d+'
+s='I study Python3.11 every day Python2.7 I love you'
+match=re.search(pattern,s)
+print(match)
+
+s2='T study Python every day'
+match2=re.search(pattern,s2)
+print(match2)
+print(match.group())
+#print(match2.group())

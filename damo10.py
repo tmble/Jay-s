@@ -1,15 +1,12 @@
-lst=[1,2,3,4,5,6,8,7]
-print('原列表：',lst,id(lst))
-#排序，默认是升序
-lst.sort()
-print('升序：',lst,id(lst))
-lst.sort(reverse=True)
-print('降序：',lst,id(lst))
-lst2=['banana','apple','Cat','Orange']
-print('原列表',lst2)
-lst2.sort()
+import re#导入
+patteern='\d.\d+'#+限定符,\d 0-9数字出现1次或多次
+s='I study Python3.11 everyday Python2.7 Ilove'
+s2='4.10 Python'
+s3='I study'
+lst=re.findall(patteern,s)
+lst2=re.findall(patteern,s2)
+lst3=re.findall(patteern,s3)
+
+print(lst)
 print(lst2)
-lst2.sort(reverse=True)
-print(lst2)
-lst2.sort(key=str.lower)
-print(lst2)
+print(lst3)
