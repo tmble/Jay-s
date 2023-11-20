@@ -1,9 +1,29 @@
-import random
-d={item:random.randint(1,1000) for item in range(4)}
-print(d)
+#(1)ZeroDivisionError
+#print(10/0)
 
-#创建两个元素
-lst=[1001,1002,1003]
-lst2=['陈东东','网鹏','喷这个']
-d={key:value for key,value in zip(lst,lst2)}
-print(d)
+#(2)IndexError
+#lst=[10,20,30,57]
+#print(lst[4])
+
+#(3)KeyError
+#d={'a':'lyx','age':200}
+#print(d['gender'])
+
+#(4)NameError
+#print(heloo)
+
+#(5)SyntaxError
+#print('he)
+
+#(6)ValueError
+#print(int('a'))
+
+#(7)AttributeError
+#i=10
+#print(i.name)
+
+#(8)TypeError
+#print('he'+756)
+
+#(9)IndentationError
+        print('he')
