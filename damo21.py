@@ -1,10 +1,8 @@
-A={10,20,30,40,50}
-B={30,50,70,90,110}
-#交集操作
-print(A&B)
-#并集操作
-print(A|B)
-#差集操作
-print(A-B)
-#补集操作
-print(A^B)
+try:
+    score=int(input('请输入分数：'))
+    if 0<=score<=100:
+        print('分数为：',score)
+    else:
+        raise Exception('分数不正确')
+except Exception as e:
+    print(e)
