@@ -1,25 +1,10 @@
-a={10,20,30}
-#向集合中添加元素
-a.add(100)
-print(a)
-#删除元素
-a.remove(20)
-print(a)
-#清空集合中所有元素
-#a.clear()
-#print(a)
-
-#集合的遍历操作
-for item in a:
-    print(item)
-
-#使用enumerate()函数
-for index,item in enumerate(a):
-    print(index,'----->',item)
-
-#集合的生成式
-s={i for i in range(1,10)}
-print(s)
-
-a={i for i in range(1,10) if i%2==1}
-print(a)
+try:
+    a=int(input('请输入第一条边长：'))
+    b = int(input('请输入第二条边长：'))
+    c = int(input('请输入第三条边长：'))
+    if a+b>c and a+c>b and b+c>a:
+        print(f'三角形的边长为：{a},{b},{c}')
+    else:
+        raise Exception(f'{a},{b},{c},不能构成三角形')
+except Exception as f:
+    print(f)
