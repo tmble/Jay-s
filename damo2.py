@@ -1,4 +1,6 @@
-lst=['hai','ws',13,'ws']
-print(lst[0],lst[-3])
-lst2=list(['hai','ws',13])
-print(lst2)
+def happy(name,age):
+    print('祝'+name+'生日快乐')
+    print(str(age)+'岁生日快乐')
+
+happy(age=21,name='益旭')
+#happy(name=配工资,18)
