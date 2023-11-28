@@ -1,23 +1,23 @@
-s='helloworld'
-print('{0:*<20}'.format(s))#字符串的显示宽度为20，左对齐，空白部分使用*号填充
-print('{0:*>20}'.format(s))
-print('{0:*^20}'.format(s))
+def fun(*para):
+    print(type(para))
+    for item in para:
+        print(item)
 
-#居中对齐
-print(s.center(20,'*'))
+#调用
+fun(10,201,30)
+fun([11,25])
+#在调用时，参数前加一颗星，分别将列表进行解包
+fun(*[10,20,35])
 
-#千位分隔符（只适用于整数和浮点数）
-print('{0:,}'.format(987646466))
-print('{0:,}'.format(898974646466466.154464))
+#个数可变的关键字参数
+def fun2(**lyx):
+    print(type(lyx))
+    for key,value in lyx.items():
+        print(key,'------',value)
 
-#浮点数小数部分的精度
-print('{0:.2f}'.format(3.1415926))
-#字符串类型，表示是最大的显示长度
-print('{0:.5}'.format('helloworld'))#hello
+#调用
+fun2(name='益旭',age=21,height=173)#关键字参数
 
-#整数类型
-a=425
-print('二进制：{0:b},十进制:{0:d},八进制:{0:o},十六进制：{0:X}'.format(a))#十六进制大小写都可
-#浮点数类型
-b=3.1415926
-print('{0:.2f},{0:.2E},{0:.2%}'.format(b))
+d={'name':'益旭','age':18,'height':173}
+#fun2(d)#fun2() takes 0 positional arguments but 1 was given
+fun2(**d)
