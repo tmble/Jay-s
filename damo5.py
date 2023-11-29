@@ -1,16 +1,38 @@
-s='伟大的中国梦'
-#编码str->bytes
-scode=s.encode(errors='repalce')#默认是utf-8,因为utf-8中文占3个字节
-print(scode)
+def calc(a,b):
+    print(a+b)
 
-scode_gbk=s.encode('gbk',errors='replace')#gbk中中文占2个字节
-print(scode_gbk)
+calc(10,20)
+print(calc(1,2))#none
 
-#编码中的出错问题
-s2='耶∴'
-scode_errors=s2.encode('gbk',errors='ignore')
-print(scode_errors)
+def calc2(a,b):
+    s=a+b
+    return s#将s返回给函数的调用处去处理
+print('-'*10)
+get_s=calc2(1,2)
+print(get_s)
 
-#解码过程bytes->str
-print(bytes.decode(scode_gbk,'gbk'))
-print(bytes.decode(scode,'utf-8'))
+get_s2=calc2(calc2(1,2),3)#1+2+3
+print(get_s2)
+
+#返回值可以是多个
+def sum(num):
+    s=0#累加和
+    b=0#奇数和
+    c=0#偶数和
+    for i in range(1,num+1):
+        if i%2!=0:#说明是奇数
+            b+=i
+        else:
+            c+=i
+        s+=i
+    return b,c,s#三个值
+
+result=sum(10)
+print(type(result))
+print(result)
+
+#解包赋值
+a,b,c=sum(10)#返回3个值,元组类型
+print(a)
+print(b)
+print(c)
