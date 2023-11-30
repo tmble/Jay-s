@@ -1,35 +1,6 @@
-#isdigit()十进制的阿拉伯数字
-print('123'.isdigit())#True
-print('一二三'.isdigit())
-print('0b1010'.isdigit())#False
-print('₁'.isdigit())
-print('-'*50)
-#所有字符都是数字
-print('123'.isnumeric())
-print('一二三'.isnumeric())#True
-print('0b1010'.isnumeric())#False
-print('壹贰叁'.isnumeric())#True
-print('-'*50)
-#所有字符都是字母（包含中文字符）
-print('hello你好'.isalpha())#True
-print('he你好123'.isalpha())#False
-print('he你好壹贰叁'.isalpha())
-print('-'*50)
-#所有字符都是数字或字母
-print('hello你好123'.isalnum())#True
-print('-'*50)
-#判断字符的大小写
-print('heH'.islower())#False
-print('j你好'.islower())#True
-print('-'*50)
-print('HELLO你好'.isupper())#True
-print('-'*50)
-#所在字符都是首字母大写
-print('HelloWorld'.istitle())#False
-print('Helloworld'.istitle())#True
-print('Hello World'.istitle())#True
-print('-'*50)
-#判断是否都是空白字符
-print('\t'.isspace())#True
-print(' '.isspace())#True
-print('\n'.isspace())#True
+def calc(a,b):
+    s=a+b
+    return s
+result=calc(10,20)
+print(result)
+#print(a,b,s)#a,b是函数的参数，参数是局部变量，s函数中定义的变量，局部变量
