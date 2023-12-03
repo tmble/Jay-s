@@ -1,12 +1,11 @@
-import re#导入
-patteern='\d.\d+'#+限定符,\d 0-9数字出现1次或多次
-s='I study Python3.11 everyday Python2.7 Ilove'
-s2='4.10 Python'
-s3='I study'
-lst=re.findall(patteern,s)
-lst2=re.findall(patteern,s2)
-lst3=re.findall(patteern,s3)
+def fac(n):
+    if n==1 or n==2:
+        return 1
+    else:
+        return fac(n-1)+fac(n-2)
 
-print(lst)
-print(lst2)
-print(lst3)
+print(fac(9))
+
+for i in range(1,10):
+    print(fac(i),end='\t')
+print()
