@@ -1,4 +1,2 @@
-lst=['京A888888','津B66666','川A88888']
-for item in lst:
-    area=item[0:1]
-    print(item,'归属地为：',area)
+print('绝对值：',abs(-100),abs(0))
+print('商和余数：',divmod(13,4))
