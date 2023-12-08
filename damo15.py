@@ -1,12 +1,14 @@
-lst=[
-    {'title':'肖申克的救赎','actors':['亚瑟.摩根']},
-]
-name=input('请输入你要查询的演员：')
-for item in lst:
-    #print(item)#字典
-    actors_lst=item.get('actors')
+import random
+def get_max(lst):
+    x=lst[0]#x存储的是元素的最大值
+    #遍历
+    for i in range(1,len(lst)):
+        if lst[i]>x:
+            x=lst[i]#对最大值进行重新赋值
+    return x
 
-    if name in actors_lst:
-       title=item.get('title')
-       print(title)
-       print(name,'出演了',title)
+#调用
+lst=[random.randint(1,100) for item in range(10)]
+print(lst)
+max=get_max(lst)
+print(max)
