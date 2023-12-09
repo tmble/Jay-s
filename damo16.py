@@ -1,11 +1,15 @@
-try:
-    num1=int(input('请输入一个整数：'))
-    num2=int(input('请输入另一个整数'))
-    result = num1 / num2
-    print('结果:',result)
-except ZeroDivisionError:
-    print('除数不能为0')
-except ValueError:
-    print('不能将字符串转为整数')
-except BaseException:
-    print('未知异常')
+def get_digit(x):
+    s=0#存储累加和
+    lst=[]#存储提取出的数字
+    for item in x:
+        if item.isdigit():#如果是数字
+            lst.append(int(item))
+    #求和
+    s=sum(lst)
+    return lst,s
+#准备函数的调用
+s=input('请输入一个字符串：')
+#调用
+lst,x=get_digit(s)
+print('提取的数字列表为：',lst)
+print('累加和为：',x)
