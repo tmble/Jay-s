@@ -1,13 +1,14 @@
-try:
-    num1 = int(input('请输入一个整数：'))
-    num2 = int(input('请输入另一个整数'))
-    result = num1 / num2
-
-except ZeroDivisionError:
-    print('除数不能为0')
-except ValueError:
-    print('不能将字符串转为整数')
-else:
-    print('结果：',result)
-finally:
-    print('程序执行结束!')
+def lower_upper(x):#x是一个字符串，形式参数
+    lst=[]
+    for item in x:
+        if 'A'<=item<='Z':
+            lst.append(chr(ord(item)+32))#ord()将字母转成Unicode码整数，加上32,chr（）整数码转成字符,
+        elif 'a'<=item<='z':
+            lst.append(chr(ord(item)-32))
+        else:
+            lst.append(item)
+    return ''.join(lst)
+#准备调用
+s=input('请输入一个字符串')
+new_s=lower_upper(s)#函数的调用
+print(new_s)
