@@ -1,8 +1,8 @@
-try:
-    gender=input('请输入你的性别：')
-    if gender!='男'and gender!='女':
-        raise Exception('未知性别：沃尔玛购物袋')
-    else:
-        print('你的性别其实是：', gender)
-except Exception:
-    print(e)
+def get_find(s,lst):
+    for item in lst:
+        if s==item:
+            return False
+lst=['hello','world','python']
+s=input('请输入您要判断的字符串：')
+result=get_find(s,lst)
+print('存在'if result else '不存在')#if..else的简写，三元运算符 if result==True if result利用到对象的布尔值
