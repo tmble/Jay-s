@@ -1,10 +1,16 @@
-def get_sum(num):#num叫形式参数
-    s=0
+#编写一个Person类
+class Person():
+    pass
 
-    for i in range(1,num+1):
-        s+=i
-    print(f'1到{num}之间的累加和为：{s}')
+#编写一个Cat类
+class Cat():
+    pass
 
-#函数的调用
-get_sum(5)#1-5之间的累加和  5是实际参数值
-get_sum(100)#1-100之间的累加和  100是实际参数值
+#创建类的对象
+#对象名=类名（）
+
+#创建一个Person类型的对象
+per=Person()#per就是Person类型的对象
+c=Cat()
+print(type(per))
+print(type(c))
