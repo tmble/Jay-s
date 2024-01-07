@@ -1,16 +1,24 @@
-def happy(name='益旭',age=21):
-    print('祝'+name+'生日快乐')
-    print(str(age)+'岁生日快乐')
+class Student:
+    school='成都xxx教育'
+    def __init__(self,xm,age):
+        self.name=xm
+        self.age=age
+    def show(self):
+        print(f'我叫：{self.name},今年:{self.age}岁了')
 
+stu=Student('lyx',age=21)
+stu2=Student('刘益旭',20)
+print(stu.name,stu.age)
+print(stu2.name,stu2.age)
+
+#为stu2动态绑定一个实例属性
+stu2.gender='♂'
+print(stu2.name,stu2.gender)
+
+#动态绑定方法
+def introduce():
+    print('我是一个普通的函数，我被动态绑定成了stu2对象的方法')
+stu2.fun=introduce#函数的一个赋值
+#fun就是stu2对象的方法
 #调用
-happy()#不用传参
-happy('鹏子')#位置传参
-happy(age=133)#关键字传参，name采用默认值
-
-happy(19)#19会被赋给name
-
-def fun(a,b=20):#a为位置参数，b默认值参数
-    pass
-
-#def fun2(a=20,b):#同时存在时，位置参数在后会报错
-#当位置参数和关键字参数同时存在时，应位置参数在前，默认参数在后
+stu2.fun()
